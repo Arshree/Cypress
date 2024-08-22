@@ -18,8 +18,8 @@ describe('My Frist Test', () =>
 
         it('verify title-Nagive test', ()=>
         {
-            cy.visit(URL)
-            cy.title().should('eq','OrangeHRM123')
+            cy.visit(ALL_DATA.URL)
+            cy.title().Notshould('eq','OrangeHRM123')
         })
 
     })
