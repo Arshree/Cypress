@@ -1,4 +1,4 @@
-import {ALL_DATA} from '../supports/selectors';
+import {ALL_DATA} from '../../support/selectors';
 
 
 describe('My Frist Test', () =>
