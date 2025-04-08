@@ -1,9 +1,10 @@
 {
-  "name": "cypress",
+  "name": "aruncypress",
+  "repository": "https://github.com/Arshree/Cypress.git",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cypress:open": "cypress open"
   },
   "author": "Arun",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "cypress": "^13.13.0"
   },
   "devDependencies": {
+    "@types/jest": "^29.5.14",
     "cypress-xpath": "^2.0.1"
   }
 }

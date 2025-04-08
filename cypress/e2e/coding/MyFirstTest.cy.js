@@ -1,25 +1,27 @@
-import {ALL_DATA} from '../../support/selectors';
-
+import {URL, SELECTORS} from '../../support/selectors';
+import { orglogin } from '../../support/logindata';
 
 describe('My Frist Test', () =>
     {
 
-        it('verify title-positive', () =>
-        {
-
+        it('verify title-positive', () =>{
             //steps1
-            cy.visit(ALL_DATA.URL)
-            cy.screenshot()
-            cy.title()
-            cy.title().should('eq','OrangeHRM')
-            
-            
-        })
+            cy.visit(URL.Login);
+            //cy.screenshot()
+            cy.title().should('eq', orglogin.title);
+        });
 
-        it('verify title-Nagive test', ()=>
-        {
-            cy.visit(ALL_DATA.URL)
-            cy.title().Notshould('eq','OrangeHRM123')
-        })
+        it('verify title-Nagive test', ()=>{
+            cy.visit(URL.Login);
+            // cy.title().Notshould('eq', 'Org123');
+            cy.title().should('not.eq','OrangeHRM123');
+        });
 
-    })
+        it('login', () =>{
+        cy.visit(URL.Login);
+        cy.get(SELECTORS.user_name).type(orglogin.username);
+        cy.get(SELECTORS.password).type(orglogin.password);
+        cy.get(SELECTORS.submit_button).click();
+        });
+
+    });
