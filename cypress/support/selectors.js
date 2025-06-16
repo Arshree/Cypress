@@ -13,3 +13,8 @@ export const SELECTORS = {
     submit_button: '[type="submit"]',
     menu: '[class="oxd-main-menu"]',
 };
+
+export const QAWEB = {
+    NAME: '#firstName',
+    
+}

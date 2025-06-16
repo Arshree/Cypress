@@ -27,3 +27,15 @@
 /// <reference types="Cypress" />
 
 /// <reference types="cypress-xpath" />
+
+Cypress.Commands.add('fillForm', (user) => {
+    cy.get('#firstName').type(user.firstName);
+    cy.get('#lastName').type(user.lastName);
+    cy.get('#userEmail').type(user.email);
+    cy.get('label[for="gender-radio-1"]').click();
+    cy.get('#submit').click();
+  });
+
+  Cypress.Commands.add('mockAPIs', () => {
+    cy.interface('GET', )
+  })
