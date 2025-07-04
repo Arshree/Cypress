@@ -1,16 +1,15 @@
-import {SELECTOR} from '../../support/selectors';
+import {amazonSelectors, URL} from '../../support/selectors';
 import { login1 } from '../../support/logindata';
 
 
 describe('Amazon testing', () =>{
     before('login', ()=>{
-        cy.visit('https://www.amazon.in');
-        cy.get('[id="nav-link-accountList-nav-line-1"]').click();
-        cy.get('[id="ap_email_login"]').type(login1.username);
-        cy.get('[id="continue"]').click();
-        cy.get('[id="ap_password"]').type(login1.password);
-        cy.get('[id="signInSubmit"]').click();
-        //cy.get().type(login1.username);
+        cy.visit(URL.amzLogin);
+        cy.get(amazonSelectors.account_signin_button).click();
+        cy.get(amazonSelectors.email_field).type(login1.username);
+        cy.get(amazonSelectors.continue_btn).click();
+        cy.get(amazonSelectors.password).type(login1.password);
+        cy.get(amazonSelectors.submit_button).click();
     });
 
     it('select items', ()=>{
