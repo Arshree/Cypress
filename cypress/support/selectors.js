@@ -21,6 +21,9 @@ export const orangeSelector = {
     subbtn: '[type="submit"]',
     side_bar: '[class="oxd-main-menu-item"]',
     search_box: '[placeholder="Search"]',
+    //username_Field: '[//*[@id="app"]/div/div[2]/div/div/div/div[2]/form/div/div/div/div/div[2]/input]',
+    username_Field: '[:nth-child(2) > .oxd-input]',
+    user_Role: '[//*[@id="app"]/div/div[2]/div/div/div/div[2]/form/div/div/div[2]/div/div[2]',
 };
 
 export const amazonSelectors = {

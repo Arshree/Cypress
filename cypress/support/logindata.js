@@ -8,3 +8,9 @@ export const orglogin = {
     password : 'admin123',
     title : 'OrangeHRM',
 };
+
+export const userdetails = {
+    username : 'Arun',
+    Employee_name: 'ArunSA',
+    
+}
