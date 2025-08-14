@@ -7,6 +7,8 @@ Cypress Version: 14.2.1
 
 Language: TypeScript + JavaScript
 
+command- npm run cypress:open
+
 Folder Structure:
 
 bash
