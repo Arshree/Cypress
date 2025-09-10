@@ -1,5 +1,5 @@
-import {URL, SELECTORS} from '../../support/selectors';
-import { orglogin } from '../../support/loginData';
+import {URL, SELECTORS} from '../support/selectors';
+import { orglogin } from '../support/loginData';
 
 describe('My Frist Test', () => {
 

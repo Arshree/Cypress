@@ -1,5 +1,5 @@
-import { SELECTORS, URL } from '../../support/selectors';
-import { orglogin } from '../../support/logindata'
+import { SELECTORS, URL } from '../support/selectors';
+import { orglogin } from '../support/logindata'
 
 describe('frist integration', () =>{
 

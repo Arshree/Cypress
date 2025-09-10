@@ -1,5 +1,5 @@
-import {URL} from '../../support/selectors';
-import { loginAmazon } from '../../support/loginData';
+import {URL} from '../support/selectors';
+import { loginAmazon } from '../support/loginData';
 
 
 describe('Amazon testing', () =>{

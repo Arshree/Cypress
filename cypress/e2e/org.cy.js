@@ -1,9 +1,9 @@
-import {orangeSelector, URL} from '../../support/selectors';
-import {orglogin, userdetails} from '../../support/logindata';
+import {orangeSelector, URL} from '../support/selectors';
+import {orgLogin, userDetails} from '../support/loginData';
 
 describe('login', () => {
     before('login org', () =>{
-        cy.login(URL.orgLogin2, orglogin.username, orglogin.password);
+        cy.login(URL.orgLogin2, orgLogin.username, orgLogin.password);
     });
     
     it('assert the Admin Tab', ()=>{
@@ -12,7 +12,7 @@ describe('login', () => {
         // cy.get(orangeSelector.side_bar).should('have.length', 10).each((item, index) => {
         //     cy.wrap(item).should('contain.text', expectedMenuItems[index]);
         // });
-        cy.get(':nth-child(2) > .oxd-input').type(userdetails.username);
+        cy.get(':nth-child(2) > .oxd-input').type(userDetails.username);
         //cy.get(orangeSelector.user_Role).click();
     });
 });
